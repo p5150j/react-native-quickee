@@ -10,7 +10,7 @@ class AlbumList extends Component {
   };
 
   componentWillMount() {
-    axios.get( 'api/music_albums' )
+    axios.get( 'http://localhost:3000/albums.json' )
       .then( responds => this.setState( {
         albums: responds.data
       } ) );
