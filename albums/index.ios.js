@@ -1,6 +1,3 @@
-// index ios
-
-// import a lib fo companent
 import React from 'react';
 import { AppRegistry, View } from 'react-native';
 import Header from './src/components/header'
@@ -8,12 +5,13 @@ import AlbumList from './src/components/AlbumList'
 
 //create a component
 const App = () => (
-	<View style={{flex: 1}}>	
-		<Header headerText={'Albums'} /> 
-		<AlbumList />
-	</View>	
+  //flex that junk so full scroll works
+  <View style={ { flex: 1 } }>
+    <Header headerText={ 'Albums' } /> 
+    <AlbumList />
+  </View>
 );
 
 
 
-AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent( 'albums', () => App );

@@ -5,6 +5,7 @@ import CardSection from './CardSection';
 import Button from './Button';
 
 const AlbumDetail = (props) => {
+  //cool lets DO WORK on the data... mmmmK?
   return (
   <Card>
     <CardSection>
@@ -22,13 +23,14 @@ const AlbumDetail = (props) => {
       <Image style={ styles.cover } source={ { uri: props.album.image } } />
     </CardSection>
     <CardSection>
-     	<Button onPress={ ()=> Linking.openURL(props.album.url )}>
-         Buy Now
-     	</Button>
+      <Button onPress={ () => Linking.openURL( props.album.url ) }>
+        Buy Now
+      </Button>
     </CardSection>
   </Card>
   );
 };
+//I know, need to DRY this up and make things alittle more modular ^^
 
 const styles = {
   headerContentStyle: {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-
+//keep it simple stupid
 const CardSection = (props) => {
   return (
   <View style={ styles.contarinerStyle }>
